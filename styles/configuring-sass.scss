@@ -1,0 +1,16 @@
+body{
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+}
+
+h1{
+    color: burlywood;
+    font-size: 2.5rem;
+}
+
+/* By default browsers cannot read Sass files for
+that we need our files to be get converted into css
+and for that we need to use any compiler which converts Sass 
+files in css so in order for browsers to understand the stylings 
+we have applied.*/

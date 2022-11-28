@@ -1,0 +1,78 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #333;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #ccc;
+}
+
+/*Sass partials are CSS files that contain small
+snippets of CSS code, specific for a particular styling
+which is seperated from the main stylesheet for maintaining
+the CSS code better.
+*/
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  color: #2a8df6;
+}
+
+#form {
+  max-width: 500px;
+  padding: 2rem;
+  box-sizing: border-box;
+  margin: auto;
+  border: #2a8df6 solid 1px;
+}
+
+.form-field {
+  display: flex;
+  margin: 0 0 1rem 0;
+}
+
+label, input {
+  width: 60%;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  justify-content: space-between;
+  font-size: 1.1rem;
+}
+
+label {
+  text-align: right;
+  width: 30%;
+}
+
+input {
+  border: 2px solid #aaa;
+  border-radius: 2%;
+}
+
+/*In order to create a Sass Partial files below are ceratin rules:
+
+i) The filename must start with an underscore
+ii) The filename must have the extension of ".scss/.sass".
+iii) The file must be saved in the same path of root stylesheet.
+
+Note:- It's possible to place partials in subfolders as well though.
+*/
+/* Scss Partials are used for
+        - CSS reset file
+        - Variables
+        - Color theme code
+        - and many other purposes...
+
+*/
+/* In order to use Scss Partial file we need it to import it 
+to aur main/working Scss file
+
+Ex:- @import 'sass-partial';
+
+Here, underscore & the extension for the partials are not needed.
+*//*# sourceMappingURL=sass-partials.css.map */

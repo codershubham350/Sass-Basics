@@ -1,0 +1,52 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+}
+
+// Below is the example for nestingin Sass
+nav{
+    ul{
+        list-style: none;
+        margin: 0 4%;
+        padding: 0;
+    }
+    li{
+        display: inline-block;
+        position: relative;
+        top: 40px;
+        left: 145px;
+    }
+    a{
+        color: #fff;
+        display: block;
+        padding: 8px 12px;
+        border-radius: 5%;
+        text-decoration: none;
+    }
+    a:hover, a:focus{
+        transition: 1s linear;
+        background-color: #0156df;
+    }
+    a:active{
+        background-color: rgb(255, 0, 0);
+        border-color: #666;
+        color: #efefef;
+    }
+}
+
+// If we want to do nesting in CSS it would be as below:
+// nav ul {
+//     list-style: none;
+//     margin: 0 4%;
+//     padding: 0;
+// }
+
+// In CSS the "nav" repeats itself for every style declaration.
+// We have avoided this using nesting with Sass
+
+// With Sass, nesting of selectors that follows the same
+// visual hierarchy of HTML is possible.
+
+// Note:- Overuse of nesting rules will result in overqualified
+//         CSS, that could be hard to maintain.

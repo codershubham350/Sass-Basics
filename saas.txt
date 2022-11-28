@@ -1,0 +1,22 @@
+Syntactically Awesome Stylesheets -> Sass (Platform independent CSS preprocessor language)
+
+Sass is necessary because:
+-> Same properties with same values can be defined with variables in Sass.
+        - Includes Variables.
+        - Includes Nesting.
+        - Includes Mixins.
+        - Includes Inheritance.
+        - Includes Operators.
+        - Includes Partials.
+        - Includes @rules.
+        and many more...
+
+Sass is considered to be as Advanced CSS.
+Sass provides dynamic programming syntax which gets compiled in normal CSS.
+Sass can be defined using ".sass" or ".scss" extensions.
+        - In .sass the code is written withot ';' and "{}".
+        - In .scss the code is written with both ';' and "{}".
+
+Sass is required for wriring a clean code which is easy to understand & less CSS in a programming
+construct. It contains fewer code lines, is more powerful and stable, as it is an extension of CSS,
+making it efficient and quick for designing & development.

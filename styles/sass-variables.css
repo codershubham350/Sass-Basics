@@ -1,0 +1,51 @@
+body {
+  background-color: #333;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #ccc;
+}
+
+/* Sass variables basic syntax:
+    $variable_name: value;
+    where value comprises of: - color value
+                              - font name
+                              - width with unit
+                              - padding value
+                              - animation
+                              - transition value
+                              - or any other value...  
+
+
+*/
+h1 {
+  color: bisque;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.para1 {
+  color: goldenrod;
+  padding: 1.5%;
+  font-size: 1.2rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.para2 {
+  color: goldenrod;
+  padding: 1.5%;
+  font-size: 1.2rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.para3 {
+  color: goldenrod;
+  padding: 1.5%;
+  font-size: 1.2rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.para4 {
+  color: goldenrod;
+  padding: 1.5%;
+  font-size: 1.2rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}/*# sourceMappingURL=sass-variables.css.map */
