@@ -1,0 +1,50 @@
+@use 'sass-modules-newColor1' as *;
+@use 'sass-modules-newColor2' as s;
+@use 'sass-mixins-mixinFile' as *;
+
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+}
+
+/* It allows us to define styles which we can further reuse
+throught our stylesheet. Mixins works as a function in Sass
+that means we can pass CSS property as an arguments inside
+them, making it look more cleaner and manageable
+
+By using mixins, repeatation of writing the same code lines
+can be reduced.
+*/
+h1 {
+    color: sass-modules-newColor1.$bg-color;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.text1,
+.text2,
+.text3 {
+    @include text-settings(85vw, 20vh);
+    font-size: 1.3rem;
+    color: s.$bg-color;
+}
+
+/* As a standard practice, mixins are created in a seperate
+file, and then imported in the main Sass file.
+
+It is important to remove the namespace from the mixins file, as
+it allows you to include them in Sass without giving any namespace.
+
+so, in short mixins help to group different styling options for
+re-using them in stylesheets.
+
+Syntax for mixin:
+
+@mixin mixin-name ($variable1, $variable2, ...)
+Include the mixin file in main Sass with @include rule with mixin-name.
+*/
+
+/* Mixins are basically functions like facility in CSS, where you
+define a process with a name & you can pass arguments to those
+mixins.*/

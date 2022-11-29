@@ -1,0 +1,63 @@
+// Globals
+@use 'responsive-sidebar-with-sass-mixins' as *;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+body{
+    height: 100vh;
+    background: #111;
+}
+
+//Sidebar...
+
+.sidebar-wrapper{
+    width: 300px;
+    height: 100%;
+    background: linear-gradient(midnightblue 2%, #000 100%);
+    @include mobileView{
+        width: 64px; // This property is taken by @content rule.
+    }
+    &_header{
+        display: flex;
+        padding: 16px 16px;
+        font-size: 1.3em;
+        text-align: center;
+        background: linear-gradient(#111 5%, #444 100%);
+        gap: 15px;
+        &_htmlCssTutorial{
+            color: #fff;
+            @include mobileView{
+                display: none;
+            }
+        }
+    }
+    &_list{
+        color: #fff;
+        margin-top: 12px;
+        &_items{
+            display: flex;
+            padding: 12px 18px;
+            gap: 10px;
+            cursor: pointer;
+            transition: all 0.5s ease;
+            color: #fff;
+            &_title{
+                margin-top: 2px;
+                @include mobileView {
+                        display: none;
+                    }
+            }
+        }
+        &_items:hover{
+            background: dodgerblue;
+        }
+    }
+}
+
+/* "user-select" specifies whether the text of an element can be selected
+or not*/

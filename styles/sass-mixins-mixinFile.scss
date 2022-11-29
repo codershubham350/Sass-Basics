@@ -1,0 +1,7 @@
+@mixin text-settings($width, $height) {
+    padding: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    width: $width;
+    height: $height;
+}

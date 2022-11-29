@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Sidebar with Sass</title>
+    <link rel="stylesheet" href="/styles/responsive-sidebar-with-sass.css">
+</head>
+<body>
+    <div class="sidebar-wrapper">
+        <div class="sidebar-wrapper_header">
+            <div class="sidebar-wrapper_header_logo">
+                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+                    viewBox="0 0 256.000000 256.000000" preserveAspectRatio="xMidYMid meet">
+                    <metadata>
+                        Created by potrace 1.16, written by Peter Selinger 2001-2019
+                    </metadata>
+                    <g transform="translate(0.000000,256.000000) scale(0.100000,-0.100000)" fill="orange" stroke="none">
+                        <path d="M727 2543 c304 -2 802 -2 1105 0 304 1 56 2 -552 2 -608 0 -856 -1
+                -553 -2z" />
+                        <path d="M174 2508 c3 -13 49 -518 102 -1123 53 -605 99 -1103 103 -1106 3 -3
+                207 -61 453 -129 l447 -123 445 123 c245 68 449 126 454 129 5 3 52 501 106
+                1106 53 605 99 1110 102 1123 l4 22 -1110 0 -1110 0 4 -22z m1792 -535 c-4
+                -54 -9 -117 -12 -140 l-6 -43 -527 0 -527 0 12 -127 c7 -71 13 -134 13 -141 1
+                -10 99 -11 501 -6 l500 7 0 -37 c0 -82 -71 -820 -79 -826 -5 -3 -131 -38 -281
+                -79 -167 -46 -266 -77 -258 -83 7 -4 8 -8 2 -8 -5 0 -14 4 -20 9 -5 5 -135 44
+                -289 86 -154 42 -281 78 -281 79 -1 0 -9 84 -18 186 -9 102 -19 200 -22 218
+                l-5 32 145 0 144 0 7 -106 c9 -123 -9 -108 179 -159 l129 -35 151 41 c83 23
+                152 42 153 43 2 2 33 312 33 334 0 9 -102 12 -475 12 -261 0 -475 3 -475 8 0
+                4 -16 182 -35 395 -19 213 -35 399 -35 412 l0 25 691 0 692 0 -7 -97z" />
+                    </g>
+                </svg>
+            
+            </div>
+
+                <div class="sidebar-wrapper_header_htmlCssTutorial">
+                    HTML & CSS Tutorials
+                </div>
+
+        </div>
+
+        <div class="sidebar-wrapper_list">
+            <div class="sidebar-wrapper_list_items">
+                <div class="sidebar-wrapper_list_items_img">
+                    <svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        xmlns:cc="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/"
+                        xmlns:svg="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:ns1="http://sozi.baierouge.fr"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 16 12">
+                        <title>Home</title>
+                        <polygon points="8 0 16 6 13 6 13 12 9 12 9 9 7 9 7 12 3 12 3 6 0 6" fill="#fff" />
+                        <metadata>
+                            <rdf:RDF>
+                                <cc:Work>
+                                    <dc:format>image/svg+xml</dc:format>
+                                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                                    <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+                                    <dc:publisher>
+                                        <cc:Agent rdf:about="http://openclipart.org/">
+                                            <dc:title>Openclipart</dc:title>
+                                        </cc:Agent>
+                                    </dc:publisher>
+                                    <dc:title>Home</dc:title>
+                                    <dc:date>2010-05-07T23:00:09</dc:date>
+                                    <dc:description>Home icon for buttons.</dc:description>
+                                    <dc:source>https://openclipart.org/detail/59161/home-by-schmidaniel</dc:source>
+                                    <dc:creator>
+                                        <cc:Agent>
+                                            <dc:title>schmidaniel</dc:title>
+                                        </cc:Agent>
+                                    </dc:creator>
+                                    <dc:subject>
+                                        <rdf:Bag>
+                                            <rdf:li>button</rdf:li>
+                                            <rdf:li>home</rdf:li>
+                                            <rdf:li>icon</rdf:li>
+                                            <rdf:li>link</rdf:li>
+                                        </rdf:Bag>
+                                    </dc:subject>
+                                </cc:Work>
+                                <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+                                    <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction" />
+                                    <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution" />
+                                    <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+                                </cc:License>
+                            </rdf:RDF>
+                        </metadata>
+                    </svg>
+                </div>
+                <div class="sidebar-wrapper_list_items_title">Dashboard</div>
+            </div>
+            <div class="sidebar-wrapper_list_items">
+                <div class="sidebar-wrapper_list_items_img">
+                    <svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="24" height="24"
+                        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:cc="http://creativecommons.org/ns#"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/"
+                        xmlns:svg="http://www.w3.org/2000/svg" xmlns:ns1="http://sozi.baierouge.fr" id="svg5816"
+                        sodipodi:docname="internet-group-chat.svg" viewBox="0 0 48 48" sodipodi:version="0.32"
+                        inkscape:output_extension="org.inkscape.output.svg.inkscape" inkscape:version="0.46"
+                        sodipodi:docbase="/home/jimmac/src/cvs/tango-icon-theme/scalable/apps">
+                        <defs id="defs3">
+                            <radialGradient id="radialGradient6719" xlink:href="#linearGradient5060" gradientUnits="userSpaceOnUse"
+                                cy="486.65" cx="605.71" gradientTransform="matrix(-2.7744 0 0 1.9697 112.76 -872.89)" r="117.14"
+                                inkscape:collect="always" />
+                            <linearGradient id="linearGradient5060" inkscape:collect="always">
+                                <stop id="stop5062" style="stop-color:black" offset="0" />
+                                <stop id="stop5064" style="stop-color:black;stop-opacity:0" offset="1" />
+                            </linearGradient>
+                            <radialGradient id="radialGradient6717" xlink:href="#linearGradient5060" gradientUnits="userSpaceOnUse"
+                                cy="486.65" cx="605.71" gradientTransform="matrix(2.7744 0 0 1.9697 -1891.6 -872.89)" r="117.14"
+                                inkscape:collect="always" />
+                            <linearGradient id="linearGradient5048">
+                                <stop id="stop5050" style="stop-color:black;stop-opacity:0" offset="0" />
+                                <stop id="stop5056" style="stop-color:black" offset=".5" />
+                                <stop id="stop5052" style="stop-color:black;stop-opacity:0" offset="1" />
+                            </linearGradient>
+                            <linearGradient id="linearGradient6715" y2="609.51" xlink:href="#linearGradient5048"
+                                gradientUnits="userSpaceOnUse" x2="302.86" gradientTransform="matrix(2.7744 0 0 1.9697 -1892.2 -872.89)"
+                                y1="366.65" x1="302.86" inkscape:collect="always" />
+                            <linearGradient id="linearGradient29418">
+                                <stop id="stop29420" style="stop-color:#f5f5f5" offset="0" />
+                                <stop id="stop29422" style="stop-color:#e9e9e9" offset="1" />
+                            </linearGradient>
+                            <linearGradient id="linearGradient29429" y2="26.258" xlink:href="#linearGradient29418"
+                                gradientUnits="userSpaceOnUse" x2="39.037" gradientTransform="matrix(1.0076 0 0 .98765 -3.0719 .27461)"
+                                y1="10.916" x1="26.012" inkscape:collect="always" />
+                            <radialGradient id="radialGradient29439" gradientUnits="userSpaceOnUse" cy="27.645" cx="29.496"
+                                gradientTransform="matrix(1 0 0 .34649 -5.1771e-17 18.067)" r="11.516" inkscape:collect="always">
+                                <stop id="stop29435" style="stop-color:#000000" offset="0" />
+                                <stop id="stop29437" style="stop-color:#000000;stop-opacity:0" offset="1" />
+                            </radialGradient>
+                            <linearGradient id="linearGradient29443" y2="24.144" xlink:href="#linearGradient29418"
+                                gradientUnits="userSpaceOnUse" x2="27.273" gradientTransform="matrix(-.97723 0 0 .99588 50.603 9.1156)"
+                                y1="10.957" x1="35.004" inkscape:collect="always" />
+                        </defs>
+                        <sodipodi:namedview id="base" bordercolor="#666666" inkscape:pageshadow="2" inkscape:window-y="105"
+                            pagecolor="#ffffff" inkscape:window-height="743" inkscape:grid-bbox="true" inkscape:zoom="1"
+                            inkscape:window-x="214" showgrid="false" borderopacity="0.13333333" inkscape:current-layer="layer1"
+                            inkscape:cx="-127.22708" inkscape:cy="-13.353097" inkscape:showpageshadow="false" inkscape:window-width="872"
+                            inkscape:pageopacity="0.0" inkscape:document-units="px" />
+                        <g id="layer1" inkscape:label="Layer 1" inkscape:groupmode="layer">
+                            <g id="g6707" style="opacity:.62887" transform="matrix(.015187 0 0 .020868 32.508 31.904)">
+                                <rect id="rect6709" style="opacity:.40206;color:black;fill:url(#linearGradient6715)" height="478.36"
+                                    width="1339.6" y="-150.7" x="-1559.3" />
+                                <path id="path6711" sodipodi:nodetypes="cccc"
+                                    style="opacity:.40206;color:black;fill:url(#radialGradient6717)"
+                                    d="m-219.62-150.68v478.33c142.88 0.9 345.4-107.17 345.4-239.2 0-132.02-159.44-239.13-345.4-239.13z" />
+                                <path id="path6713" sodipodi:nodetypes="cccc"
+                                    style="opacity:.40206;color:black;fill:url(#radialGradient6719)"
+                                    d="m-1559.3-150.68v478.33c-142.8 0.9-345.4-107.17-345.4-239.2 0-132.02 159.5-239.13 345.4-239.13z" />
+                            </g>
+                            <g id="g6865" transform="matrix(.015187 0 0 .020868 42.258 21.904)">
+                                <rect id="rect6867" style="opacity:.40206;color:black;fill:url(#linearGradient6715)" height="478.36"
+                                    width="1339.6" y="-150.7" x="-1559.3" />
+                                <path id="path6869" sodipodi:nodetypes="cccc"
+                                    style="opacity:.40206;color:black;fill:url(#radialGradient6717)"
+                                    d="m-219.62-150.68v478.33c142.88 0.9 345.4-107.17 345.4-239.2 0-132.02-159.44-239.13-345.4-239.13z" />
+                                <path id="path6871" sodipodi:nodetypes="cccc"
+                                    style="opacity:.40206;color:black;fill:url(#radialGradient6719)"
+                                    d="m-1559.3-150.68v478.33c-142.8 0.9-345.4-107.17-345.4-239.2 0-132.02 159.5-239.13 345.4-239.13z" />
+                            </g>
+                            <path id="path29431" sodipodi:rx="11.515739" sodipodi:ry="3.9901025"
+                                style="opacity:.12025;color:#000000;display:block;fill:url(#radialGradient29439)" sodipodi:type="arc"
+                                d="m41.012 27.645a11.516 3.9901 0 1 1 -23.031 0 11.516 3.9901 0 1 1 23.031 0z"
+                                transform="matrix(1.3728 0 0 1.0924 -10.337 .23562)" sodipodi:cy="27.645426" sodipodi:cx="29.496454" />
+                            <path id="rect29408" style="color:#000000;display:block;stroke:#787878;fill:url(#linearGradient29429)"
+                                d="m18.402 6.5709c-1.072 0-1.921 0.8634-1.921 1.9135v15.062c0 1.05 0.849 1.883 1.921 1.883h14.137c0.856 1.103 2.523 2.893 6.517 4.382-1.778-2.049-1.774-3.44-1.574-4.382h2.897c1.071 0 1.952-0.833 1.952-1.883v-15.062c0-1.0497-0.881-1.9131-1.952-1.9131h-21.977z" />
+                            <path id="path29445" sodipodi:nodetypes="cccccccccccc"
+                                style="color:#000000;display:block;stroke:#ffffff;fill:none"
+                                d="m18.813 7.5755c-0.918 0-1.292 0.437-1.292 1.337v13.868c0 0.9 0.727 1.614 1.646 1.614h13.884c0.733 0.946 1.303 1.975 3.515 3.1-0.414-0.898-0.065-2.152 0.216-3.1h3.493c0.918 0 1.016-0.36 1.016-1.26v-14.222c0-0.8995-0.25-1.286-1.168-1.286l-21.31-0.0505z" />
+                            <path id="path29441" style="color:#000000;display:block;stroke:#787878;fill:url(#linearGradient29443)"
+                                d="m29.776 15.464c1.039 0 1.862 0.871 1.862 1.93v15.187c0 1.059-0.823 1.898-1.862 1.898h-13.712c-0.831 1.113-2.447 2.918-6.3216 4.42 1.7246-2.066 1.7216-3.469 1.5266-4.42h-2.8093c-1.039 0-1.8933-0.839-1.8933-1.898v-15.187c0-1.059 0.8543-1.93 1.8933-1.93h21.316z" />
+                            <path id="path29449" sodipodi:nodetypes="cccccccccccc"
+                                style="color:#000000;display:block;stroke:#ffffff;fill:none"
+                                d="m29.389 16.453c0.943 0 1.235 0.461 1.235 1.422v14.204c0 0.96-0.242 1.368-1.184 1.368h-13.902c-0.753 1.01-2.068 2.596-3.511 3.251 0.403-1.167 0.248-2.136 0.173-3.251h-3.4072c-0.9425 0-1.2123-0.408-1.2123-1.368v-14.078c0-0.96 0.2698-1.548 1.2123-1.548h20.596z" />
+                        </g>
+                        <metadata>
+                            <rdf:RDF>
+                                <cc:Work>
+                                    <dc:format>image/svg+xml</dc:format>
+                                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                                    <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+                                    <dc:publisher>
+                                        <cc:Agent rdf:about="http://openclipart.org/">
+                                            <dc:title>Openclipart</dc:title>
+                                        </cc:Agent>
+                                    </dc:publisher>
+                                    <dc:title>tango inetrnet group chat</dc:title>
+                                    <dc:date>2010-03-29T08:03:30</dc:date>
+                                    <dc:description>"Group chat" icon from &lt;a
+                                        href="http://tango.freedesktop.org/Tango_Desktop_Project"&gt; Tango Project &lt;/a&gt;
+                                        &#13;\n&lt;br&gt;&lt;br&gt;&#13;\nSince version 0.8.90 Tango Project icons are Public Domain: &lt;a
+                                        href="http://tango.freedesktop.org/Frequently_Asked_Questions#Terms_of_Use.3F"&gt; Tango Project FAQ
+                                        &lt;/a&gt;</dc:description>
+                                    <dc:source>https://openclipart.org/detail/35209/tango-inetrnet-group-chat-by-warszawianka</dc:source>
+                                    <dc:creator>
+                                        <cc:Agent>
+                                            <dc:title>warszawianka</dc:title>
+                                        </cc:Agent>
+                                    </dc:creator>
+                                    <dc:subject>
+                                        <rdf:Bag>
+                                            <rdf:li>balloon</rdf:li>
+                                            <rdf:li>externalsource</rdf:li>
+                                            <rdf:li>icon</rdf:li>
+                                            <rdf:li>speech</rdf:li>
+                                            <rdf:li>tango</rdf:li>
+                                        </rdf:Bag>
+                                    </dc:subject>
+                                </cc:Work>
+                                <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+                                    <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction" />
+                                    <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution" />
+                                    <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+                                </cc:License>
+                            </rdf:RDF>
+                        </metadata>
+                    </svg>
+                </div>
+                <div class="sidebar-wrapper_list_items_title">Chat</div>
+            </div>
+            <div class="sidebar-wrapper_list_items">
+                <div class="sidebar-wrapper_list_items_img">
+                    <svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="24" height="24" 
+                        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"
+                        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"
+                        xmlns:ns1="http://sozi.baierouge.fr" xmlns:xlink="http://www.w3.org/1999/xlink" id="svg2"
+                        sodipodi:docname="ludki.svg" inkscape:export-filename="C:\Documents and Settings\Radek\Pulpit\ludki.png"
+                        viewBox="0 0 834.42 598.85" inkscape:export-xdpi="150.03322" version="1.1" inkscape:export-ydpi="150.03322"
+                        inkscape:version="0.48.1 ">
+                        <sodipodi:namedview id="base" bordercolor="#666666" inkscape:pageshadow="2" inkscape:window-y="-4"
+                            fit-margin-left="0" pagecolor="#ffffff" fit-margin-top="0" inkscape:window-maximized="1" inkscape:zoom="0.7"
+                            inkscape:window-x="-4" inkscape:window-height="815" showgrid="false" borderopacity="1.0"
+                            inkscape:current-layer="layer1" inkscape:cx="454.14874" inkscape:cy="341.58513" fit-margin-right="0"
+                            fit-margin-bottom="0" inkscape:window-width="1152" inkscape:pageopacity="0.0" inkscape:document-units="px" />
+                        <g id="layer1" inkscape:label="Layer 1" inkscape:groupmode="layer" transform="translate(17.613 -225.22)">
+                            <path id="path2985"
+                                style="stroke-linejoin:round;stroke:#fff;stroke-linecap:round;stroke-width:44.1;fill:none"
+                                inkscape:connector-curvature="0" d="m80.686 801.56 92.934-185.86 99 181.82" />
+                            <path id="path2987"
+                                style="stroke-linejoin:round;stroke:#fff;stroke-linecap:round;stroke-width:44.1;fill:none"
+                                inkscape:connector-curvature="0" d="m173.62 615.7-2.19-184.77" />
+                            <path id="path2989" sodipodi:nodetypes="ccc"
+                                style="stroke-linejoin:round;stroke:#fff;stroke-linecap:round;stroke-width:44.1;fill:none"
+                                inkscape:connector-curvature="0" d="m172.86 459.51 107.14 62.85-7.14 64.29" />
+                            <path id="path2991" d="m172.86 459.51-77.146 92.85-62.857-67.14"
+                                style="stroke-linejoin:round;stroke:#fff;stroke-linecap:round;stroke-width:44.1;fill:none"
+                                inkscape:connector-curvature="0" />
+                            <path id="path3761"
+                                d="m66.307 453.11c16.54 20.108 13.648 49.816-6.4594 66.356-20.108 16.54-49.816 13.648-66.356-6.4594-16.541-20.11-13.649-49.82 6.4586-66.36 20.107-16.54 49.816-13.65 66.356 6.46z"
+                                style="fill:#fff" inkscape:connector-curvature="0" />
+                            <path id="rect3763" d="m-17.613 459.33 33.155-24.237 38.421 41.508-33.155 24.237z" style="fill:#ffffff"
+                                inkscape:connector-curvature="0" />
+                            <path id="path3775"
+                                d="m314.96 597c3.4391-25.808-14.695-49.518-40.503-52.957-25.808-3.4391-49.518 14.695-52.957 40.503-3.4391 25.808 14.695 49.518 40.503 52.957 25.808 3.4391 49.518-14.695 52.957-40.503z"
+                                style="fill:#fff" inkscape:connector-curvature="0" />
+                            <path id="path3945" style="fill:#ffffff"
+                                d="m283.23 617.95-30.619 0.21529-15.485-28.069 15.134-28.284 30.619-0.21529 15.485 28.069z"
+                                inkscape:transform-center-x="-0.92675959" inkscape:transform-center-y="-2.1553864"
+                                inkscape:connector-curvature="0" />
+                            <path id="path3781"
+                                d="m227.86 395.58c0 31.756-25.744 57.5-57.5 57.5s-57.5-25.744-57.5-57.5 25.744-57.5 57.5-57.5 57.5 25.744 57.5 57.5z"
+                                style="fill:#fff" inkscape:connector-curvature="0" />
+                            <path id="path3831" d="m303.54 688.71 92.94-185.87 98.99 181.83"
+                                style="stroke-linejoin:round;stroke:#fff;stroke-linecap:round;stroke-width:44.1;fill:none"
+                                inkscape:connector-curvature="0" />
+                            <path id="path3833" d="m396.48 502.84-2.19-184.76"
+                                style="stroke-linejoin:round;stroke:#fff;stroke-linecap:round;stroke-width:44.1;fill:none"
+                                inkscape:connector-curvature="0" />
+                            <path id="path3837" sodipodi:nodetypes="ccc"
+                                style="stroke-linejoin:round;stroke:#fff;stroke-linecap:round;stroke-width:44.1;fill:none"
+                                inkscape:connector-curvature="0" d="m395.71 346.65-91.429 28.571-71.429-67.143" />
+                            <path id="path3841" style="fill:#fff" inkscape:connector-curvature="0"
+                                d="m263.45 270.25c16.54 20.108 13.648 49.816-6.4594 66.356-20.108 16.54-49.816 13.648-66.356-6.4594-16.54-20.108-13.648-49.816 6.4594-66.356 20.108-16.54 49.816-13.648 66.356 6.4594z" />
+                            <path id="rect3843" style="fill:#ffffff" inkscape:connector-curvature="0"
+                                d="m179.53 276.47 33.155-24.237 38.421 41.508-33.155 24.237z" />
+                            <path id="path3853"
+                                d="m450.71 282.72c0 31.756-25.744 57.5-57.5 57.5s-57.5-25.744-57.5-57.5 25.744-57.5 57.5-57.5 57.5 25.744 57.5 57.5z"
+                                style="fill:#fff" inkscape:connector-curvature="0" />
+                            <path id="path3863" d="m401.58 346.65 91.429 28.571 71.429-67.143" sodipodi:nodetypes="ccc"
+                                style="stroke-linejoin:round;stroke:#fff;stroke-linecap:round;stroke-width:44.1;fill:none"
+                                inkscape:connector-curvature="0" />
+                            <path id="path3867" style="fill:#fff" inkscape:connector-curvature="0"
+                                d="m533.84 270.25c-16.54 20.108-13.648 49.816 6.4594 66.356 20.108 16.54 49.816 13.648 66.356-6.4594 16.54-20.108 13.648-49.816-6.4594-66.356-20.108-16.54-49.816-13.648-66.356 6.4594z" />
+                            <path id="rect3869" style="fill:#ffffff" inkscape:connector-curvature="0"
+                                d="m617.76 276.47-33.155-24.237-38.421 41.508 33.155 24.237z" />
+                            <path id="path3807" d="m718.5 801.56-92.93-185.86-99 181.82"
+                                style="stroke-linejoin:round;stroke:#fff;stroke-linecap:round;stroke-width:44.1;fill:none"
+                                inkscape:connector-curvature="0" />
+                            <path id="path3809" d="m625.57 615.7 2.1915-184.76"
+                                style="stroke-linejoin:round;stroke:#fff;stroke-linecap:round;stroke-width:44.1;fill:none"
+                                inkscape:connector-curvature="0" />
+                            <path id="path3811" d="m626.33 459.51-107.14 62.857 7.1428 64.286" sodipodi:nodetypes="ccc"
+                                style="stroke-linejoin:round;stroke:#fff;stroke-linecap:round;stroke-width:44.1;fill:none"
+                                inkscape:connector-curvature="0" />
+                            <path id="path3813"
+                                style="stroke-linejoin:round;stroke:#fff;stroke-linecap:round;stroke-width:44.1;fill:none"
+                                inkscape:connector-curvature="0" d="m626.33 459.51 77.143 92.857 62.857-67.143" />
+                            <path id="path3817"
+                                d="m732.88 453.11c-16.54 20.108-13.648 49.816 6.4594 66.356 20.108 16.54 49.816 13.648 66.356-6.4594 16.54-20.108 13.648-49.816-6.4594-66.356-20.108-16.54-49.816-13.648-66.356 6.4594z"
+                                style="fill:#fff" inkscape:connector-curvature="0" />
+                            <path id="rect3819" d="m816.8 459.33-33.155-24.237-38.421 41.508 33.155 24.237z" style="fill:#ffffff"
+                                inkscape:connector-curvature="0" />
+                            <path id="path3829" style="fill:#fff" inkscape:connector-curvature="0"
+                                d="m571.33 395.58c0 31.756 25.744 57.5 57.5 57.5s57.5-25.744 57.5-57.5-25.744-57.5-57.5-57.5-57.5 25.744-57.5 57.5z" />
+                            <path id="path3825" style="fill:#fff" inkscape:connector-curvature="0"
+                                d="m484.23 597c-3.4392-25.808 14.695-49.518 40.503-52.957 25.808-3.4391 49.518 14.695 52.957 40.503 3.4392 25.808-14.695 49.518-40.503 52.957-25.808 3.4391-49.518-14.695-52.957-40.503z" />
+                            <path id="path3945-1" style="fill:#ffffff"
+                                d="m538.22 622.37-29.632-7.7169-7.6927-31.12 21.939-23.403 29.632 7.7169 7.6927 31.12z"
+                                inkscape:transform-center-x="-1.4530325" inkscape:transform-center-y="-1.8420838"
+                                inkscape:connector-curvature="0" />
+                        </g>
+                        <metadata>
+                            <rdf:RDF>
+                                <cc:Work>
+                                    <dc:format>image/svg+xml</dc:format>
+                                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                                    <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+                                    <dc:publisher>
+                                        <cc:Agent rdf:about="http://openclipart.org/">
+                                            <dc:title>Openclipart</dc:title>
+                                        </cc:Agent>
+                                    </dc:publisher>
+                                    <dc:title>MechMan</dc:title>
+                                    <dc:date>2011-08-22T12:07:10</dc:date>
+                                    <dc:description>The work done on quickly without a specific plan</dc:description>
+                                    <dc:source>https://openclipart.org/detail/157411/mechman-by-anomaly</dc:source>
+                                    <dc:creator>
+                                        <cc:Agent>
+                                            <dc:title>Anomaly</dc:title>
+                                        </cc:Agent>
+                                    </dc:creator>
+                                    <dc:subject>
+                                        <rdf:Bag>
+                                            <rdf:li>auto</rdf:li>
+                                            <rdf:li>automotive</rdf:li>
+                                            <rdf:li>pitstop</rdf:li>
+                                            <rdf:li>screwdriver</rdf:li>
+                                            <rdf:li>stick</rdf:li>
+                                            <rdf:li>wrench</rdf:li>
+                                        </rdf:Bag>
+                                    </dc:subject>
+                                </cc:Work>
+                                <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+                                    <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction" />
+                                    <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution" />
+                                    <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+                                </cc:License>
+                            </rdf:RDF>
+                        </metadata>
+                    </svg>
+                </div>
+                <div class="sidebar-wrapper_list_items_title">Team</div>
+            </div>
+            <div class="sidebar-wrapper_list_items">
+                <div class="sidebar-wrapper_list_items_img">
+                    <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" width="24" height="24" fill="white"
+                        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" id="svg4619"
+                        inkscape:version="0.91 r13725" sodipodi:docname="grocery-15.svg" x="0px" y="0px" width="15px" height="15px"
+                        viewBox="0 0 15 15" style="enable-background:new 0 0 15 15;" xml:space="preserve">
+                        <metadata id="metadata15">
+                            <rdf:RDF>
+                                <cc:Work rdf:about="">
+                                    <dc:format>image/svg+xml</dc:format>
+                                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                                    <dc:title></dc:title>
+                                </cc:Work>
+                            </rdf:RDF>
+                        </metadata>
+                        <defs id="defs13" />
+                        <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10"
+                            gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2"
+                            inkscape:window-width="1751" inkscape:window-height="731" id="namedview11" showgrid="false"
+                            inkscape:zoom="15.733333" inkscape:cx="-1.1122881" inkscape:cy="7.5" inkscape:window-x="20"
+                            inkscape:window-y="43" inkscape:window-maximized="0" inkscape:current-layer="svg4619" />
+                        <g id="g3">
+                            <path
+                                d="M 13.199219 1.5 C 13.199219 1.5 11.808806 1.4588 11.253906 2 C 10.720406 2.5202 10.5 2.9177 10.5 4 L 1.1992188 4 L 2.59375 8.8144531 C 2.59725 8.8217531 2.6036219 8.8287375 2.6074219 8.8359375 C 2.8418219 9.4932375 3.4545469 9.9666406 4.1855469 9.9941406 C 4.1885469 9.9954406 4.1992187 10 4.1992188 10 L 10.699219 10 L 10.699219 10.199219 C 10.699219 10.199219 10.7 10.500391 10.5 10.900391 C 10.3 11.300391 10.200391 11.5 9.4003906 11.5 L 2.9003906 11.5 C 1.9003906 11.5 1.9003906 13 2.9003906 13 L 4.0996094 13 L 4.1992188 13 L 9.0996094 13 L 9.1992188 13 L 9.3007812 13 C 10.500781 13 11.399219 12.299609 11.699219 11.599609 C 11.999219 10.899609 12 10.300781 12 10.300781 L 12 10 L 12 4 C 12 3.4764 12.228619 3 12.699219 3 L 13.25 3 C 13.6642 3 14 2.6642 14 2.25 C 14 1.8358 13.6642 1.5 13.25 1.5 L 13.199219 1.5 z M 9.1992188 13 C 8.5992188 13 8.1992188 13.4 8.1992188 14 C 8.1992188 14.6 8.5992187 15 9.1992188 15 C 9.7992187 15 10.199219 14.6 10.199219 14 C 10.199219 13.4 9.7992188 13 9.1992188 13 z M 4.1992188 13 C 3.5992188 13 3.1992188 13.4 3.1992188 14 C 3.1992188 14.6 3.5992187 15 4.1992188 15 C 4.7992188 15 5.1992188 14.6 5.1992188 14 C 5.1992188 13.4 4.7992187 13 4.1992188 13 z "
+                                id="path5" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="sidebar-wrapper_list_items_title">Products</div>
+            </div>
+            <div class="sidebar-wrapper_list_items">
+                <div class="sidebar-wrapper_list_items_img">
+                    <svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="24" height="24"
+                        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"
+                        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"
+                        xmlns:ns1="http://sozi.baierouge.fr" xmlns:xlink="http://www.w3.org/1999/xlink" id="svg4168"
+                        sodipodi:docname="New document 12" viewBox="0 0 64.457 90.007" version="1.1" inkscape:version="0.48.3.1 r9886">
+                        <sodipodi:namedview id="base" bordercolor="#666666" inkscape:pageshadow="2" inkscape:window-y="19"
+                            fit-margin-left="0" pagecolor="#ffffff" fit-margin-top="0" inkscape:window-maximized="0" inkscape:zoom="0.35"
+                            inkscape:window-x="0" inkscape:window-height="747" showgrid="false" borderopacity="1.0"
+                            inkscape:current-layer="layer1" inkscape:cx="610.08571" inkscape:cy="-154.99659" fit-margin-right="0"
+                            fit-margin-bottom="0" inkscape:window-width="1022" inkscape:pageopacity="0.0" inkscape:document-units="px" />
+                        <g id="layer1" inkscape:label="Layer 1" inkscape:groupmode="layer" transform="translate(235.09 -287.36)">
+                            <path id="path4936" sodipodi:nodetypes="cccccccccccccccscccccssccscccccscccccsccccccccccccccccccccccc"
+                                style="block-progression:tb;text-indent:0;color:#fff;text-transform:none;fill:#fff"
+                                inkscape:connector-curvature="0"
+                                d="m-194.37 287.37c-3.2721 0.13655-6.3717 1.3849-8.0938 4.125l-3.9062 6.2188c-0.028 0.0433-0.066 0.0809-0.094 0.125l-26.406 42.031-0.3438 0.5625-0.031 0.6875-1.625 31.656-0.2188 4.5938 4-2.1875 27.844-15.219 0.5938-0.3125 0.375-0.5625 30.406-48.375c1.9681-3.1315 1.4088-6.9968-0.4062-10.312-1.8151-3.3157-4.9277-6.4256-8.875-8.9062-3.9473-2.4807-8.0378-3.8964-11.813-4.0938-0.4718-0.0247-0.9388-0.0508-1.4062-0.0312zm0.1875 5.125c0.2943-0.008 0.609 0.0141 0.9375 0.0312 2.628 0.13737 6.0557 1.2577 9.375 3.3438 3.3193 2.086 5.7989 4.6604 7.0625 6.9688 1.0669 1.949 1.2465 3.4504 0.8437 4.5625-0.107-0.21996-0.1945-0.44073-0.3124-0.65625-1.8151-3.3157-4.8966-6.4256-8.8438-8.9062-3.9473-2.4807-8.069-3.8964-11.844-4.0938-0.2412-0.0126-0.4781-0.03-0.7187-0.0312 0.7056-0.70485 1.8281-1.172 3.5-1.2188zm-4 6.375c0.2943-0.008 0.609-0.0172 0.9375 0 2.6281 0.13737 6.0557 1.2577 9.375 3.3438 3.3193 2.086 5.7988 4.6916 7.0625 7 1.2209 2.2304 1.3062 3.8524 0.6563 5l-2.1563 3.4688c-0.1602-0.35851-0.3397-0.71259-0.5313-1.0625-1.7489-3.1948-4.7532-6.2229-8.625-8.6562-3.8719-2.4333-7.9253-3.8411-11.562-4.0312-0.4018-0.021-0.7918-0.0116-1.1876 0l2.0938-3.3438h0.031l0.063-0.125c0.6569-0.93513 1.8731-1.5386 3.8437-1.5938zm-6.0313 8.9375c0.3151-0.01 0.6543 0.0132 1 0.0312 2.6059 0.13624 5.8533 1.1596 9.0626 3.0625l-18.281 29.094c-4.7667 2.838-9.249 2.4918-13.406 1.5938l-1.7812-0.375 20.562-32.781c0.7499-0.36846 1.6971-0.59035 2.8437-0.625zm-8.375 34.281c-0.143 6.0398 2.7835 10.362 5.5938 13.812l0.1562 0.1875-17.812 9.7188c-0.8799-1.7025-2.3489-2.6153-4.5626-2.8438l1.0313-20.125 0.7187 0.1875c4.3249 1.035 9.4988 1.8045 14.875-0.9375z" />
+                        </g>
+                        <metadata>
+                            <rdf:RDF>
+                                <cc:Work>
+                                    <dc:format>image/svg+xml</dc:format>
+                                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                                    <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+                                    <dc:publisher>
+                                        <cc:Agent rdf:about="http://openclipart.org/">
+                                            <dc:title>Openclipart</dc:title>
+                                        </cc:Agent>
+                                    </dc:publisher>
+                                    <dc:title>Pencil</dc:title>
+                                    <dc:date>2013-03-27T05:57:59</dc:date>
+                                    <dc:description>Pencil</dc:description>
+                                    <dc:source>https://openclipart.org/detail/176548/pencil-by-eternaltyro-176548</dc:source>
+                                    <dc:creator>
+                                        <cc:Agent>
+                                            <dc:title>eternaltyro</dc:title>
+                                        </cc:Agent>
+                                    </dc:creator>
+                                    <dc:subject>
+                                        <rdf:Bag>
+                                            <rdf:li>Pencil</rdf:li>
+                                        </rdf:Bag>
+                                    </dc:subject>
+                                </cc:Work>
+                                <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+                                    <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction" />
+                                    <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution" />
+                                    <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+                                </cc:License>
+                            </rdf:RDF>
+                        </metadata>
+                    </svg>
+                </div>
+                <div class="sidebar-wrapper_list_items_title">Reviews</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

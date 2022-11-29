@@ -1,0 +1,88 @@
+body {
+  background-color: #333;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #ccc;
+}
+
+/*
+== & != (Checking the value same or not)
+
++, -, *, / & % (Mathematical operators)
+
+<, <=, > & >= (Checking the nuber greater/smaller)
+
+and, or & not (Checking boolean behaviour)
+
++, - & / (Concatenating strings)
+*/
+.main-heading {
+  font-size: 7.2rem;
+  text-align: center;
+  color: orangered;
+  padding: 40.2px;
+  width: 50%;
+}
+
+/* In Sass we can add two similar types of unit but
+we cannot add different units or in short different
+units cannot be compiled.
+
+Ex:- .main-heading{
+    padding: 20px + 120px //we can do this
+}
+
+Ex:- .main-heading {
+    padding: 2em + 120px //we cannot do this
+}
+
+Ex:- .main-heading {
+    font-size: (1.2 * 4.2rem) / 0.7; // 7.2rem
+    text-align: center;
+    color: orangered;
+    padding: (120px / 3px) + 0.2px; //40.2px
+}
+
+OR
+$new-width: 150px;
+
+.main-heading {
+    font-size: (1.2 * 4.2rem) / 0.7;
+    text-align: center;
+    color: orangered;
+    padding: (120px / 3px) + 0.2px;
+    width: ($new-width / 60px) * 20%; // 50%
+}
+
+*/
+/* Note:- Values inside the brackets are evaluated
+first as they have greater priority then rest.
+
+With operators in Sass precise values can be defined
+by calculations.
+*/
+/*
+
+Sass also supports conditional statements:
+
+@if condition1{
+    ...
+} @else if condition2{
+
+    ...
+}
+
+@each $a in $list {
+    ...
+}
+
+@while condition{
+    classname{
+        ...
+    }
+}
+
+@for $i from start through end{
+    ...
+}
+
+*//*# sourceMappingURL=sass-operators.css.map */

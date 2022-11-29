@@ -1,0 +1,94 @@
+@use 'sass-modules-newColor1';
+@use 'sass-modules-newColor2' as s;
+
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+}
+
+/* @import, allows you to access the external packages
+also alows to splits our Sass into manageable partials
+
+But it has few limitations as well.
+*/
+
+h1{
+    color: sass-modules-newColor1.$bg-color;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.text1, .text2, .text3{
+    font-size: 1.3rem;
+    color: s.$bg-color;
+}
+
+/* The @import statement makes all the variables, functions etc.
+globally available.
+
+so, if we declare same variables in different files and we import
+those files including variables then those variables will get 
+overridden from the last imported file.
+
+Also, it will create difficulty to find where the variable
+or function was defined.
+*/
+
+/* A better an alternative way to import variables is to
+define a module with the @use rule. The @use rule loads
+the Sass file as a module and now the variable/functions
+can be accessed with the namespace.
+
+so, in order to use a variable from a specific module
+imported using the @use rule we can use like:
+
+Ex:- h1 {
+    color: sass-modules-newColor1.$bg-color;
+}
+
+here, the namespace and the variable is seperated by a 
+"dot (.)"
+*/
+
+/* We can also use alias in oder to rename the namespace,
+The default namespace can be replaced with any name
+prefixed by "as" keyword. 
+
+Ex:- @use 'sass-modules-newColor2' as s;
+*/
+
+/* There are some built-in modules that can be imported
+explicitly are:
+
+    @use 'sass:math';
+    @use 'sass:color';
+    @use 'sass:string';
+    @use 'sass:list';
+    @use 'sass:map';
+    @use 'sass:selector';
+    @use 'sass:meta';
+
+*/
+
+/* The @use rule is similar to the @import rule with some
+noticeable differences.
+
+@use Rule:
+        - Makes the variables & the functions available within the scope of current file.
+        - Avoids adding the variables & the functions to the global scope.
+        - Easy to figure out where each name of the Sass file references comes from.
+        - Lets you add shorter names without any risk of collision.
+        - Lets you load your files only once to end up duplicating dependencies.
+        - It must appear at the beginning of the file, and cannot be nested in style rules.
+        - In future references Sass will be deprecating the use of @import.
+        - Better alternative as compared to @import rule.
+*/
+
+/* Sass module system or Sass module is a feature
+which lets you import the Sass file to the main scss file,
+by using the @use statement. By importing the file with @use
+we are importing the file as module, to which we have access
+and can be used anywhere inside the stylesheet. It does share
+similar functionality when compared with @import statement,
+but is a much better alternative than @import.*/

@@ -1,0 +1,16 @@
+// Responsive...
+
+@mixin mobileView{
+    @media screen and (max-width: 680px){
+        @content;
+    }
+}
+
+/* "@content" is a simple way to reduce the repetitive code lines
+and allows an easier way for reusing and applying the changes throughout
+the codebase.
+
+"@content" rule is mostly used in media queries and keyframes.
+By using this rule we can set any properties and as many as we want for the media rule.
+It is going to set those properties inside, without any clutter.
+*/

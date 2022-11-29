@@ -1,0 +1,63 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+}
+
+/* Inheritance of OOP Concept- where child elements can inherit
+the properties of parent element.
+
+In CSS, we have seen the BEM methodology for inheriting the properties
+but BEM methodology can create cluttered HTML, prone to errors from
+forgetting to include both classes & can bring non-semantic style
+concerns into our markup.
+
+With the use of @extend rule, we can inherit the styles from one
+class to another.
+*/
+
+.class-one{
+    font-size: 2rem;
+    text-align: left;
+    color: goldenrod;    
+}
+
+.class-two{
+    @extend .class-one;
+    text-align: center;
+    padding: 40px;
+}
+
+%hoverOnHeading{
+    &:hover{
+        color: darkgreen;
+        transition: 2s linear;
+        cursor: pointer;
+    }
+}
+
+.class-three{
+    @extend .class-two, %hoverOnHeading;
+    padding: 0;
+    text-align: right;
+}
+
+/* To inherit any class properties, it's not necessity to have a
+parent-child relationship. We can also override and add new
+properties to the inherited class*/
+
+/* The placeholder selector (%) is used specifically
+with the @extend rule.
+
+Ex:- %selector-name {Scss Rules;}
+
+The placeholder selector are meant to be used with the @extend
+directive.
+*/
+
+/* In Sass, the selector denoted by "&" symbol is mainly
+used in nested selectors in which it is defined.
+
+Placeholders are very useful when writing a Sass library
+where each style rule may or may not be used.
+*/
